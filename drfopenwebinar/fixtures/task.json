@@ -1,0 +1,1 @@
+[{"model": "api.task", "pk": 2, "fields": {"title": "Ir al lidl", "description": "falta verduras, pan, leche etcetera", "complete": false, "created": "2024-05-27T06:51:51.580Z"}}]

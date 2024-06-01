@@ -138,3 +138,5 @@ REST_FRAMEWORK = {
     
 }
 
+FIXTURE_DIRS = [BASE_DIR / 'fixtures']
+
