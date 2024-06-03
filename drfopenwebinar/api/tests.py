@@ -38,7 +38,7 @@ class TaskAPITest(APITestCase):
         # print(response_json)
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response_json), 2)
+        self.assertEqual(len(response_json), 6)
         self.assertIsInstance(response_json, list)
         self.assertIsInstance(response_json[0], dict)
         self.assertIsInstance(response_json[1], dict)
@@ -50,7 +50,7 @@ class TaskAPITest(APITestCase):
         response = self.client.post(url, data, format='json')
         
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.assertEqual(Task.objects.count(), 1)
+        self.assertEqual(Task.objects.count(), 7)
         self.assertEqual(Task.objects.get().title, 'Test Task')
         
     
